@@ -1,0 +1,14 @@
+Creating/Applying a Pod
+
+# describing a pod
+# kubectl describe [pod-name]
+
+# kubectl create -f [path-to-file.yml] --save-config
+or
+# kubectl apply -f [path-to-file.yml]
+
+# get into kubernetes cluster
+# kubectl exec [pod-name] -it sh
+
+# delete a pod
+# kubectl delete -f [path-to-file.yml]

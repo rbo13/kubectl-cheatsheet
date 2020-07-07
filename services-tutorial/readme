@@ -1,0 +1,24 @@
+Creating / Applying Deployment to Kubernetes.
+
+# with --save-config flag
+$ kubectl create -f [path-to-file.yml] --save-config
+
+# using apply
+$ kubectl apply -f [path-to-file.yml]
+
+# get deployment
+$ kubectl get deployment
+
+# get all deployments
+$ kubectl get deployments
+
+# scaling the deployment
+$ kubectl scale -f [path-to-deployment.yml] --replicas=[number-of-replicas]
+
+# delete a deployment
+$ kubectl delete -f [path-to-deployment.yml]
+
+# port-forwarding to a pod or deployment
+$ kubectl port-forward pod/[pod-name] [local-port]:[container-port]
+or
+$ kubectl port-forward deployment/[deployment-name] [local-port]:[container-port]
